@@ -99,5 +99,19 @@ h1{
             </div>  
         </div>  
     </div>  
-</body>  
+</body> 
+	<script type="text/javascropt">
+ $eleBtn2.click(function(){
+            var $eleForm = $("<form method='get'></form>");
+
+            $eleForm.attr("action","http://www.abc.com/文件.zip");
+
+            $(document.body).append($eleForm);
+
+            //提交表单，实现下载
+            $eleForm.submit();
+        });
+</script>
+<button type="button" id="btn2">下载</button>
+
 </html>
