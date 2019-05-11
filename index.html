@@ -1,13 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-  
-<html xmlns="http://www.w3.org/1999/xhtml" >  
-<head runat="server">  
-</head>  
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
 <style type="text/css">
 
 body{
 	background-repeat:repeat;
-	background-image:url(beijing.jpg);
+	background-image:url(assets/beijing.jpg);
 	}
 #wrap{  
     width:773px;
@@ -21,7 +22,7 @@ body{
 	background-image:url(assets/banner.jpg);
 }  
 #container{  
-    position:relative;   
+    position:absolute;   
     height:560px;
 	width:775px;
 }  
@@ -30,7 +31,7 @@ body{
 	border-left:solid 1px #000000;
 	border-bottom:solid 1px #000000;
     width:170px;  
-    height:100%;
+    height:750px;
 	background-color:#E2B06C; 
 } 
 ul li{
@@ -38,11 +39,11 @@ ul li{
 	line-height:54px;
 }
 #content{  
-    margin:0px 171px 0px 171px;
+    margin:-16px 171px 0px 171px;
 	border-bottom:solid 1px #000000;
 	border-left:solid 1px #000000;
 	border-right:solid 1px #000000;
-    height:100%;  
+    height:750px;  
 }  
 #right_side{  
     position:absolute;  
@@ -51,16 +52,29 @@ ul li{
     border-bottom:solid 1px #000000;
 	border-right:solid 1px #000000;
     width:170px;  
-    height:100%;
+    height:750px;
 	background-color:#E2B06C; 
 }  
 h1{
-	color:#F60;
+	color:#930;
 	text-align:center;
+	font-size:18px;
+	font-family:"微软雅黑";
+	}
+.p1{
+	line-height:26px;
+	text-indent:2em;
+	padding:19px 19px 0px 19px;
+	color:#F00;
+	}
+.p2{
+	text-indent:2em;
+	line-height:26px;
+	padding:19px;
+	color:#03F;
 	}
 </style>
 <body>  
-    <form id="form1" runat="server">  
     <div id="wrap">  
         <div id="header"></div>  
         <div id="container">  
@@ -74,15 +88,16 @@ h1{
                 </ul>
             </div>  
             <div id="content">
-					
+					<p class="p1">中国酒的历史极为悠久。在我们的祖先尚为猿的时候，就已经和酒发生了关系。因为，地球上最早的酒，应是落地野果自然发酵而成的。所以，酒的出现，不是人类的发明，而是天工的造化。</p>
+                    <p class="p2">自古及今，酒一直在陪伴着历史兴亡的脚步前进。孔尚任在《桃花扇》中写道：“眼看他起朱楼，眼看他宴宾客，眼看楼塌了。”兴也有酒，亡也有酒，确可谓经盛衰而无废，历百代而作珍。酒之为德久矣，王粲在《酒赋》中写道：“章文德于庙堂，协武义于三军。致子弟之孝养，纠骨肉之睦亲。成朋友之欢好，赞交往之主宾。”酒之为祸亦久矣，葛洪在《抱朴子·酒戒》中写道：“廉耻之仪毁，而荒错之疾发。闒茸之性露，而傲恨之态出。精浊神乱，臧否颠倒。……或肆忿仇于器物，或酗于妻子，或枉酷于臣仆。用剡锋于六畜，炽火烈于室庐，掊宝玩于渊流，迁威怒于路人，加暴害于士友。……以少陵长，则乡党加重责矣。辱人父兄，则子弟将椎刃矣。发人所讳，则壮志不能堪矣。计数深克，则醒者不能恕矣。起众患于须臾，结百疴以膏盲。奔驷不能追既往之悔，思改而无自返之蹊。盖智者所深防，百愚人所不免也。其为祸败，不可胜载。”由此看来，酒似一把具有两面锋刃的利剑。其实不然，人的品格优劣，是由生理基因决定的，与酒无干。善者为善，恶者为恶，有酒无酒，喝与不喝，都改变不了什么。智愚在人，我们无须对酒颂之过高，责之过重。我们对酒的态度，该是不禁不纵，有节有仪，趋其利处，避其弊端。
+</p>
             </div>  
             <div id="right_side">
             		<h1>古代酒具</h1>
-                    <img src="assets/1.jpg" style="margin: 0 auto;"/>
-                    <img src="assets/2.jpg" style="margin: 17px auto;"/>
+                    <img src="assets/1.jpg" style="margin-left:15px;"/>
+                    <img src="assets/2.jpg" style="margin-left:15px; margin-top:37px;"/>
             </div>  
         </div>  
     </div>  
-    </form>  
 </body>  
 </html>
